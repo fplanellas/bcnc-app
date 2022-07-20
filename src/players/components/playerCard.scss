@@ -1,0 +1,84 @@
+@import '../../styles/variables.scss';
+
+.card-container {
+    padding: $spacing-md;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1vh 1vw;
+}
+
+img {
+    display: block;
+}
+
+.stats-container {
+    background: $bg;
+    padding: $spacing-md;
+    position: relative;
+
+    h3 {
+        color: $light;
+        font-size: 16px;
+    }
+
+    h4 {
+        color: $light;
+        font-size: 12px;
+    }
+
+    .like-definition-list{
+        background: $light;
+        padding: $spacing-md;
+        margin: 6px 0 ;
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+}
+.team-logo {
+    width: 100px;
+	height: 100px;
+    background-color: $light;
+    position: absolute;
+    border-radius:50%;
+    overflow: hidden;
+    top: -55px;
+    right: $spacing-md;
+
+    .Spurs {  
+        margin: auto;
+        background: url('./assets/badges_sprite.png') no-repeat -525px -1001px;
+        width: 48px;
+        height: 98px;
+    }
+
+    .ManCity {
+        margin: auto;
+        background: url('./assets/badges_sprite.png') no-repeat -800px -700px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .ManUtd {
+        margin: auto;
+        background: url('./assets/badges_sprite.png') no-repeat -601px -800px;
+        width: 98px;
+        height: 99px;
+    }
+
+    .Leicester {
+        margin: auto;
+        background: url('./assets/badges_sprite.png') no-repeat 0 0;
+        width: 100px;
+        height: 100px;
+    }
+
+    .Arsenal {
+        margin: auto;
+        background: url('./assets/badges_sprite.png') no-repeat -107px -100px;
+        width: 86px;
+        height: 100px;
+    }
+
+    
+}
