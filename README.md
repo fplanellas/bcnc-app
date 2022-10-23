@@ -14,7 +14,7 @@ falta por completar el almacenamiento para cacheo de la api (aún no he pensado 
 
 # instalación
 
-después de descargar el projecto es necesario hacer un npm Install 
-para desplegar en modo desarrollo: npm run dev 
+después de descargar el projecto es necesario hacer un npm Install, 
+para desplegar en modo desarrollo: npm run dev,  
 aquí pongo un enlace a la app funcionando: 
 https://subtle-puppy-a017e1.netlify.app
