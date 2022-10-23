@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
 form {
   display: flex;
   gap: 1rem;
@@ -232,55 +229,4 @@ span {
   form {
     flex-direction: column;
   }
-}
-main {
-  padding: 12px;
-}
-
-.card-container {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-  margin: 24px auto;
-}
-
-.card-detail-container {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: 24px auto;
-  border: 1px solid #e1e0e0;
-}
-
-.add {
-  display: flex;
-  justify-content: space-between;
-  padding: 12px;
-  padding-top: 0;
-  font-size: 12px;
-}
-.add a {
-  text-decoration: underline;
-}
-.add :hover {
-  color: rgb(29, 29, 29);
-  font-weight: bold;
-}
-
-header {
-  border-bottom: 1px solid rgb(29, 29, 29);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 12px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  color: rgb(29, 29, 29);
-  background-color: #f5f3f3;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=components.css.map */

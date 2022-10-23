@@ -1,6 +1,9 @@
-@use '../ui/components/navbar.scss';
-@use '../players/components/playerCard.scss';
+
+@use '../product/components/components.scss';
+@use '../product/pages/pages.scss';
+@use '../ui/components/ui.scss';
 @import './variables.scss';
+
 
 * {
     box-sizing: border-box;
@@ -10,9 +13,7 @@
 body {
     width: 100%;
     font-family: $Poppins;
-    color: $dark;
+    color: $dark;    
+    background-color:$bg;
 }
 
-#root {
-    height: 100%;
-}

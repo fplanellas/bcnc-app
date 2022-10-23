@@ -1,0 +1,194 @@
+@import "../../styles/variables.scss";
+
+form {
+  display: flex;
+  gap: 1rem;
+  padding: $spacing-md 0;
+  border-bottom: 1px solid $primary;
+  justify-content: flex-end;
+  padding: $spacing-md;
+  width: 100%;
+
+  div {
+    display: flex;
+    input[type="radio"] {
+      opacity: 0;
+    }
+
+    label {
+      padding-right: $spacing-md;
+      margin-left: -$spacing-lg;
+    }
+
+    input {
+      margin: 0 $spacing-md;
+    }
+
+    label:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+.card {
+  padding: $spacing-md;
+  background: $light;
+  margin: 6px 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  font-size: 12px;
+  border: 1px solid $primary;
+  background-color: $bg;
+  color: $dark;
+  margin: auto;
+
+  img {
+    width: 160px;
+    height: 212px;
+  }
+
+  div {
+    margin: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  div:hover {
+    box-shadow: none;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-detail {
+  background: $light;
+  padding: $spacing-md;
+  display: flex;
+  font-size: 12px;
+  background-color: $bg;
+
+  form {
+    justify-content: space-between;
+  }
+
+  img {
+    display: block;
+    width: 160px;
+    height: 212px;
+  }
+
+  div {
+    padding: 0 $spacing-md;
+    border: 0;
+    background: transparent;
+  }
+
+  .box2 {
+    padding: 0 $spacing-md;
+    border: 0;
+    background: transparent;
+    grid-column: 2 / 4;
+  }
+}
+
+Link {
+  text-decoration: underline;
+
+  :hover {
+    color: $dark;
+    font-weight: bold;
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: $light;
+  transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.border {
+  border-bottom: 1px solid $primary;
+}
+
+.success {
+  padding-top: $spacing-lg;
+}
+
+//error msg
+.error-msg {
+  margin: $spacing-lg auto;
+  width: 300px;
+  text-align: center;
+  border: 1px solid $light;
+  padding: $spacing-lg;
+  border-radius: 5px;
+  box-shadow: rgba(123, 122, 122, 0.35) 0px 5px 15px;
+
+  .error-p {
+    font-weight: bold;
+    color: $error;
+  }
+
+  button {
+    background-color: $error;
+    color: $light;
+    padding: $spacing-sm $spacing-md;
+    border: 0;
+    border-radius: 5px;
+    margin-top: $spacing-md;
+    cursor: pointer;
+  }
+}
+
+#error-msg.show {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: all 2s ease-in;
+  -moz-transition: all 2s ease-in;
+  -webkit-transition: all 2s ease-in;
+}
+
+/// SHOPPING CART ///
+
+.shoping-container {
+  background-image: url("../assets/shopping-cart.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  width: 45px;
+  height: 40px;
+  display: flex;
+  justify-content: right;
+  .user-cart {
+    border: 1px solid $error;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background: rgba(250, 251, 250, 0.645);
+  }
+}
+
+@media (max-width: 720px) {
+  .card-detail {
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+  }
+
+  form {
+    flex-direction: column;
+  }
+}

@@ -1,18 +1,22 @@
-import {Route, Routes} from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { UserProvider } from '../product/context/UserProvider';
+import { ProductPage, ProductDetail } from '../product/pages';
+import { Header } from '../ui';
 
-import { Home } from "../players/pages/Home"
-import { Navbar } from '../ui'
-
-
-export const AppRouter = () => {
+const AppRouter = () => {
   return (
-    <>
-        <Navbar />
+    <UserProvider>
+        <Header />
 
         <Routes>
-            <Route path="/" element={<Home />} />
+                <Route path="product" element={<ProductPage />} />
+                <Route path="detail/:id" element={<ProductDetail />} />
+
+
+                <Route path="/" element={<Navigate to="/product" />} />
         </Routes>
-    </>
+    </UserProvider>
   )
 }
 
+export default AppRouter

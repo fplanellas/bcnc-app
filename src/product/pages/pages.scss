@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+
+main {
+  padding: $spacing-md;
+}
+.card-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  margin: $spacing-lg auto;
+}
+
+.card-detail-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: $spacing-lg auto;
+  border: 1px solid $primary;
+}
+
+.add {
+  display: flex;
+  justify-content: space-between;
+  padding: $spacing-md;
+  padding-top: 0;
+  font-size: $spacing-md;
+
+  a {
+    text-decoration: underline;
+  }
+
+  :hover {
+    color: $dark;
+    font-weight: bold;
+  }
+}
